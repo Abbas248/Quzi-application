@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="quiz-container">
+            <h1>Quiz Application</h1>
+            <div id="timer">Time Left: <span id="time"></span> seconds</div>
+            <h4 id="ques">Question</h4>
+            <div class="inp">
+                <input type="radio" name="opt" onclick="enableNext()" value="opt1"> 
+                <span id="opt1"></span>
+            </div>
+            <div class="inp">
+                <input type="radio" name="opt" onclick="enableNext()" value="opt2">
+                 <span id="opt2"></span>
+            </div>
+            <div class="inp">
+                 <input type="radio" name="opt" onclick="enableNext()" value="opt3"> 
+                <span id="opt3"></span>
+            </div>
+            <button id="btn" onclick="next()" disabled>Next</button>
+        </div>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+    </html>
